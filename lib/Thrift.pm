@@ -18,6 +18,8 @@
 # under the License.
 #
 
+package Thrift;
+
 our $VERSION = '0.6.0-dev';
 
 ##require 5.6.0;
@@ -27,8 +29,7 @@ use warnings;
 #
 # Data types that can be sent via Thrift
 #
-package # hide
-    TType;
+package TType;
 use constant STOP   => 0;
 use constant VOID   => 1;
 use constant BOOL   => 2;
@@ -51,16 +52,14 @@ use constant UTF16  => 17;
 #
 # Message types for RPC
 #
-package # hide
-    TMessageType;
+package TMessageType;
 use constant CALL      => 1;
 use constant REPLY     => 2;
 use constant EXCEPTION => 3;
 use constant ONEWAY    => 4;
 1;
 
-package # hide
-    Thrift::TException;
+package Thrift::TException;
 
 sub new {
     my $classname = shift;
@@ -70,8 +69,7 @@ sub new {
 }
 1;
 
-package # hide
-    TApplicationException;
+package TApplicationException;
 use base('Thrift::TException');
 
 use constant UNKNOWN              => 0;

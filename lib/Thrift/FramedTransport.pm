@@ -29,8 +29,7 @@ use Thrift::Transport;
 #
 # @package thrift.transport
 #
-package # hide
-    Thrift::FramedTransport;
+package Thrift::FramedTransport;
 
 use base('Thrift::Transport');
 

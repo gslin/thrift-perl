@@ -33,8 +33,7 @@ use Bit::Vector;
 #
 # Binary implementation of the Thrift protocol.
 #
-package # hide
-    Thrift::BinaryProtocol;
+package Thrift::BinaryProtocol;
 use base('Thrift::Protocol');
 
 use constant VERSION_MASK   => 0xffff0000;
@@ -478,8 +477,7 @@ sub readStringBody
 #
 # Binary Protocol Factory
 #
-package # hide
-    Thrift::BinaryProtocolFactory;
+package Thrift::BinaryProtocolFactory;
 use base('TProtocolFactory');
 
 sub new

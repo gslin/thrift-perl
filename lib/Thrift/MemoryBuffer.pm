@@ -24,8 +24,7 @@ use warnings;
 use Thrift;
 use Thrift::Transport;
 
-package # hide
-    Thrift::MemoryBuffer;
+package Thrift::MemoryBuffer;
 use base('Thrift::Transport');
 
 sub new
