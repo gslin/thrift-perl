@@ -1,3 +1,4 @@
+# ABSTRACT: Perl module of Thrift 0.5.0
 #
 # Licensed to the Apache Software Foundation (ASF) under one
 # or more contributor license agreements. See the NOTICE file
