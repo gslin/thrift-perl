@@ -272,7 +272,7 @@ sub flush
 #
 # Build a ServerSocket from the ServerTransport base class
 #
-package Thrift::ServerSocket;
+package  Thrift::ServerSocket;
 
 use base qw( Thrift::Socket Thrift::ServerTransport );
 
